@@ -117,19 +117,19 @@ public class DefaultDateAdapter extends AbsDateAdapter<DefaultDateAdapter.DateIt
         @Override
         public void setDay(Date date) {
             //tvDay.setText(PagerDatePickerDateFormat.DATE_PICKER_DAY_FORMAT.format(date));
-			tvDay.setText(pl.rspective.pagerdatepicker.view.DateRecyclerView.LocalDateFormat.format(DATE_PICKER_DAY_FORMAT_STR, date));
+			tvDay.setText(pl.rspective.pagerdatepicker.view.DateRecyclerView.LocalDateFormat.format(PagerDatePickerDateFormat.DATE_PICKER_DAY_FORMAT_STR, date));
         }
 
         @Override
         public void setMonthName(Date date) {
 			//tvMonth.setText(PagerDatePickerDateFormat.DATE_PICKER_MONTH_NAME_FORMAT.format(date));
-            tvMonth.setText(pl.rspective.pagerdatepicker.view.DateRecyclerView.LocalDateFormat.format(DATE_PICKER_MONTH_NAME_FORMAT_STR, date));
+            tvMonth.setText(pl.rspective.pagerdatepicker.view.DateRecyclerView.LocalDateFormat.format(PagerDatePickerDateFormat.DATE_PICKER_MONTH_NAME_FORMAT_STR, date));
         }
 
         @Override
         public void setDayName(Date date) {
             //tvDayName.setText(PagerDatePickerDateFormat.DATE_PICKER_DAY_NAME_FORMAT.format(date));
-			tvDayName.setText(pl.rspective.pagerdatepicker.view.DateRecyclerView.LocalDateFormat.format(DATE_PICKER_DAY_NAME_FORMAT_STR, date));
+			tvDayName.setText(pl.rspective.pagerdatepicker.view.DateRecyclerView.LocalDateFormat.format(PagerDatePickerDateFormat.DATE_PICKER_DAY_NAME_FORMAT_STR, date));
         }
 
         @Override

@@ -35,7 +35,7 @@ import pl.rspective.pagerdatepicker.adapter.DefaultDateAdapter;
 import pl.rspective.pagerdatepicker.model.DateItem;
 
 public class DateRecyclerView extends RecyclerView implements ViewPager.OnPageChangeListener, DefaultDateAdapter.DateItemListener {
-	public static java.text.DateFormat LocalDateFormat = null;
+	public static android.text.format.DateFormat LocalDateFormat = null;
 
     public static interface DatePickerListener {
         void onDatePickerItemClick(DateItem dateItem, int position);

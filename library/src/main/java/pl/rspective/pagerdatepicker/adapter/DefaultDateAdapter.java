@@ -118,19 +118,25 @@ public class DefaultDateAdapter extends AbsDateAdapter<DefaultDateAdapter.DateIt
         @Override
         public void setDay(Date date) {
             //tvDay.setText(PagerDatePickerDateFormat.DATE_PICKER_DAY_FORMAT.format(date));
-			tvDay.setText(Calendar.getInstance().setTime(date).getDisplayName(Calendar.DAY_OF_MONTH,SHORT,pl.rspective.pagerdatepicker.view.DateRecyclerView.CurrentLocale));
+			Calendar c = Calendar.getInstance();
+			c.setTime(date);
+			tvDay.setText(c.getDisplayName(Calendar.DAY_OF_MONTH,SHORT,DateRecyclerView.CurrentLocale));
         }
 
         @Override
         public void setMonthName(Date date) {
 			//tvMonth.setText(PagerDatePickerDateFormat.DATE_PICKER_MONTH_NAME_FORMAT.format(date));
-            tvMonth.setText(Calendar.getInstance().setTime(date).getDisplayName(Calendar.MONTH,SHORT,pl.rspective.pagerdatepicker.view.DateRecyclerView.CurrentLocale));
+            Calendar c = Calendar.getInstance();
+			c.setTime(date);
+			tvMonth.setText(c.getDisplayName(Calendar.MONTH,SHORT,DateRecyclerView.CurrentLocale));
         }
 
         @Override
         public void setDayName(Date date) {
             //tvDayName.setText(PagerDatePickerDateFormat.DATE_PICKER_DAY_NAME_FORMAT.format(date));
-			tvDayName.setText(Calendar.getInstance().setTime(date).getDisplayName(Calendar.DAY_OF_WEEK,SHORT,pl.rspective.pagerdatepicker.view.DateRecyclerView.CurrentLocale));
+			Calendar c = Calendar.getInstance();
+			c.setTime(date);
+			tvDayName.setText(c.getDisplayName(Calendar.DAY_OF_WEEK,SHORT,DateRecyclerView.CurrentLocale));
         }
 
         @Override

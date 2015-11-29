@@ -24,6 +24,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Date;
+import java.util.Calendar;
 
 import pl.rspective.pagerdatepicker.PagerDatePickerDateFormat;
 import pl.rspective.pagerdatepicker.R;

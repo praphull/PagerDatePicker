@@ -35,7 +35,7 @@ import pl.rspective.pagerdatepicker.adapter.DefaultDateAdapter;
 import pl.rspective.pagerdatepicker.model.DateItem;
 
 public class DateRecyclerView extends RecyclerView implements ViewPager.OnPageChangeListener, DefaultDateAdapter.DateItemListener {
-	public static Locale CurrentLocale = null;
+	public static java.util.Locale CurrentLocale = null;
 
     public static interface DatePickerListener {
         void onDatePickerItemClick(DateItem dateItem, int position);

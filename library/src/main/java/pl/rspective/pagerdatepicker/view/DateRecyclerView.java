@@ -35,7 +35,7 @@ import pl.rspective.pagerdatepicker.adapter.DefaultDateAdapter;
 import pl.rspective.pagerdatepicker.model.DateItem;
 
 public class DateRecyclerView extends RecyclerView implements ViewPager.OnPageChangeListener, DefaultDateAdapter.DateItemListener {
-	public static android.text.format.DateFormat LocalDateFormat = null;
+	public static Locale CurrentLocale = null;
 
     public static interface DatePickerListener {
         void onDatePickerItemClick(DateItem dateItem, int position);
@@ -55,17 +55,17 @@ public class DateRecyclerView extends RecyclerView implements ViewPager.OnPageCh
 
     public DateRecyclerView(Context context) {
         this(context, null);
-		LocalDateFormat = android.text.format.DateFormat.getDateFormat(context);
+		CurrentLocale = context.getResources().getConfiguration().locale;
     }
 
     public DateRecyclerView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
-		LocalDateFormat = android.text.format.DateFormat.getDateFormat(context);
+		CurrentLocale = context.getResources().getConfiguration().locale;
     }
 
     public DateRecyclerView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-		LocalDateFormat = android.text.format.DateFormat.getDateFormat(context);
+		CurrentLocale = context.getResources().getConfiguration().locale;
 
         initWidget(context, attrs);
     }

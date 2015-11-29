@@ -20,9 +20,15 @@ import java.text.SimpleDateFormat;
 
 public interface PagerDatePickerDateFormat {
 
-    SimpleDateFormat DATE_PICKER_DAY_FORMAT = new SimpleDateFormat("dd");
-    SimpleDateFormat DATE_PICKER_MONTH_NAME_FORMAT = new SimpleDateFormat("MMMM");
-    SimpleDateFormat DATE_PICKER_DAY_NAME_FORMAT = new SimpleDateFormat("EEEE");
+    String DATE_PICKER_DAY_FORMAT_STR = "dd";
+    String DATE_PICKER_MONTH_NAME_FORMAT_STR = "MMM";
+    String DATE_PICKER_DAY_NAME_FORMAT_STR = "EEE";
 
-    SimpleDateFormat DATE_PICKER_DD_MM_YYYY_FORMAT = new SimpleDateFormat("dd-MM-yyyy");
+    String DATE_PICKER_DD_MM_YYYY_FORMAT_STR = "dd-MM-yyyy";
+
+    SimpleDateFormat DATE_PICKER_DAY_FORMAT = new SimpleDateFormat(DATE_PICKER_DAY_FORMAT_STR);
+    SimpleDateFormat DATE_PICKER_MONTH_NAME_FORMAT = new SimpleDateFormat(DATE_PICKER_MONTH_NAME_FORMAT_STR);
+    SimpleDateFormat DATE_PICKER_DAY_NAME_FORMAT = new SimpleDateFormat(DATE_PICKER_DAY_NAME_FORMAT_STR);
+
+    SimpleDateFormat DATE_PICKER_DD_MM_YYYY_FORMAT = new SimpleDateFormat(DATE_PICKER_DD_MM_YYYY_FORMAT_STR);
 }
